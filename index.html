@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Professionnel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Bouton bascule thème -->
+  <button id="theme-toggle" title="Changer de thème">
+    <span id="theme-icon">🌙</span>
+  </button>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>Mon Portfolio</h1>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Hero -->
+  <section id="accueil" class="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h2 class="animate fadeInDown">Bienvenue sur mon Portfolio</h2>
+      <p class="animate fadeInUp">Développeur passionné, créateur d'expériences web uniques.</p>
+      <a href="#projets" class="btn animate fadeInUp">Voir mes projets</a>
+    </div>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="apropos" class="apropos section">
+    <div class="container">
+      <h2 class="section-title animate fadeInUp">À propos</h2>
+      <div class="apropos-content">
+        <div class="apropos-image animate fadeInLeft">
+          <img src="https://via.placeholder.com/250" alt="Photo de profil">
+        </div>
+        <div class="apropos-text animate fadeInRight">
+          <p>Passionné par le web, je crée des expériences interactives et visuellement percutantes. Expertise en design moderne, développement front-end et animations web.</p>
+          <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Animations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projets" class="projets section">
+    <div class="container">
+      <h2 class="section-title animate fadeInUp">Projets</h2>
+      <!-- Filtres -->
+      <div class="project-filters animate fadeInUp">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+      <!-- Grille des projets -->
+      <div class="projects-grid">
+        <a href="projet1.html" class="project-card animate fadeInUp" data-category="web">
+          <img src="https://via.placeholder.com/600x400" alt="Projet Web 1">
+          <div class="project-info">
+            <h3>Projet Web 1</h3>
+            <p>Une application web interactive et moderne.</p>
+            <span class="project-tag">Web</span>
+          </div>
+        </a>
+        <a href="project2.html" class="project-card animate fadeInUp" data-category="mobile">
+          <img src="https://via.placeholder.com/600x400" alt="Projet Mobile 1">
+          <div class="project-info">
+            <h3>Projet Mobile 1</h3>
+            <p>Une application mobile intuitive et réactive.</p>
+            <span class="project-tag">Mobile</span>
+          </div>
+        </a>
+        <a href="project3.html" class="project-card animate fadeInUp" data-category="design">
+          <img src="https://via.placeholder.com/600x400" alt="Projet Design 1">
+          <div class="project-info">
+            <h3>Projet Design 1</h3>
+            <p>Un design graphique innovant et percutant.</p>
+            <span class="project-tag">Design</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="competences" class="competences section">
+    <div class="container">
+      <h2 class="section-title animate fadeInUp">Compétences</h2>
+      <div class="skills">
+        <div class="skill animate fadeInLeft">
+          <h3>HTML5</h3>
+          <div class="progress">
+            <div class="progress-bar" data-percentage="95">95%</div>
+          </div>
+        </div>
+        <div class="skill animate fadeInRight">
+          <h3>CSS3</h3>
+          <div class="progress">
+            <div class="progress-bar" data-percentage="90">90%</div>
+          </div>
+        </div>
+        <div class="skill animate fadeInLeft">
+          <h3>JavaScript</h3>
+          <div class="progress">
+            <div class="progress-bar" data-percentage="85">85%</div>
+          </div>
+        </div>
+        <div class="skill animate fadeInRight">
+          <h3>Responsive Design</h3>
+          <div class="progress">
+            <div class="progress-bar" data-percentage="80">80%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Expérience -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2 class="section-title animate fadeInUp">Expérience</h2>
+      <div class="timeline">
+        <div class="timeline-item animate fadeInUp">
+          <h3>Développeur Web - Entreprise A</h3>
+          <span>2019 - Présent</span>
+          <p>Création de solutions web interactives et modernisation d'interfaces utilisateurs.</p>
+        </div>
+        <div class="timeline-item animate fadeInUp">
+          <h3>Intégrateur Web - Entreprise B</h3>
+          <span>2017 - 2019</span>
+          <p>Développement de sites responsives et optimisation des performances front-end.</p>
+        </div>
+        <div class="timeline-item animate fadeInUp">
+          <h3>Stagiaire Développement - Entreprise C</h3>
+          <span>2016 - 2017</span>
+          <p>Participation à des projets innovants et apprentissage des techniques modernes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title animate fadeInUp">Contact</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-group animate fadeInUp">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group animate fadeInUp">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group animate fadeInUp">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn animate fadeInUp">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Bouton Retour en haut -->
+  <button id="back-to-top" title="Retour en haut">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
