@@ -1,0 +1,33 @@
+arbre
+caniveau
+circuit_de_collecte_douala_1
+circuit_de_collecte_douala_2
+circuit_de_collecte_douala_3
+circuit_de_collecte_douala_4
+circuit_de_collecte_douala_5
+drains_construits
+
+douala_1
+pdu_limitearrondissement
+equipements_culturels_et_cultuelsd1
+espaces_commerciauxd1
+espaces_libresd1
+espaces_recreatifsd1
+etablissements_scolairesd1
+formations_sanitairesd1
+ouvragesd1
+points_limitesd1
+
+url_post
+46.255.164.111:10026/geoserver/rest/workspaces/ne/datastores/postgis_store/featuretypes
+header-----------------
+Content-Type=application/xml
+
+body------------
+<featureType>
+  <name>aire de santé</name>
+  <title>Couche représentant les aires de santé de la cud</title>
+  <enabled>true</enabled>
+  <nativeName>sante</nativeName>
+  <srs>EPSG:32632</srs>
+</featureType>
